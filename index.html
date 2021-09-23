@@ -23,11 +23,11 @@
 <body>
   <!--Header-->
   <header class="site-header">
+    <a href="v3.vuejs.org">
+      <img src="assets/icons/vue-logo.png" alt="Vue js logo">
+      <span class="">Vue.js</span>
+    </a>
     <nav class="site-nav">
-      <a href="v3.vuejs.org">
-        <img src="assets/icons/vue-logo.png" alt="Vue js logo">
-        <span class="">Vue.js</span>
-      </a>
       <ul>
         <li><a href="#">Docs</a></li>
         <li><a href="https://v3.vuejs.org/api/" target="_blank">API Reference</a></li>
@@ -36,78 +36,94 @@
         <li><a href="#">Translations</a></li>
         <li><a href="https://github.com/vuejs/docs" target="_blank">GitHub</a></li>
       </ul>
+      <div>
+        <label for="search"></label>
+        <input type="search" name="search" id="search" placeholder="Search">
+      </div>
     </nav>
   </header>
-  <!--Aside-->
-  <aside class="side-bar">
-    <nav class="page-nav">
-      <ul>
-        <li><a href="#">What is Vue.js?</a></li>
-        <li><a href="#">Getting Started</a></li>
-        <li><a href="#">Declarative Rendering</a></li>
-        <li><a href="#">Handling User Input</a></li>
-        <li><a href="#">Conditionals and Loop</a></li>
-        <li><a href="#">Composing with Components</a></li>
-        <li><a href="#">Ready for More?</a></li>
-      </ul>
-    </nav>
-  </aside>
-  <!--Main-->
-  <main>
-    <header class="page-header">
-      <h1>Introduction</h1>
-    </header>
-    <section>
-      <h2><a href="#what-is-vue">#</a> What is Vue.js?</h2>
-      <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other
-        monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is
-        focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects.
-        On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in
-        combination with modern tooling and supporting libraries (opens new window).</p>
-      <p>If you’d like to learn more about Vue before diving in, we created a video walking through the core principles
-        and a sample project.</p>
-    </section>
-    <article>
-      <h2><a href="#getting-started">#</a>Getting Started</h2>
-      <div class="btn">
-        <a href="#">Installation</a>
-      </div>
-      <aside class="tip-box">
-        <h3>TIP</h3>
-        <p>The official guide assumes intermediate level knowledge of HTML, CSS, and JavaScript. If you are totally new
-          to frontend development, it might not be the best idea to jump right into a framework as your first step -
-          grasp the basics then come back! Prior experience with other frameworks helps, but is not required.</p>
-      </aside>
+  <div class="container">
+    <!--Aside-->
+    <aside class="side-bar">
+      <nav class="page-nav">
+        <ul>
+          <li><a href="#">What is Vue.js?</a></li>
+          <li><a href="#">Getting Started</a></li>
+          <li><a href="#">Declarative Rendering</a></li>
+          <li><a href="#">Handling User Input</a></li>
+          <li><a href="#">Conditionals and Loop</a></li>
+          <li><a href="#">Composing with Components</a></li>
+          <li><a href="#">Ready for More?</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!--Main-->
+    <main>
+      <header class="page-header">
+        <h1>Introduction</h1>
+      </header>
       <section>
-        <p>The easiest way to try out Vue.js is using the Hello World example (opens new window). Feel free to open it
-          in another tab and follow along as we go through some basic examples.</p>
-        <p>The Installation page provides more options of installing Vue. Note: We do not recommend that beginners start
-          with vue-cli, especially if you are not yet familiar with Node.js-based build tools.
-          #</p>
+        <h2><a href="#what-is-vue">#</a> What is Vue.js?</h2>
+        <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other
+          monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is
+          focused on the view layer only, and is easy to pick up and integrate with other libraries or existing
+          projects.
+          On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used
+          in
+          combination with modern tooling and supporting libraries (opens new window).</p>
+        <p>If you’d like to learn more about Vue before diving in, we created a video walking through the core
+          principles
+          and a sample project.</p>
       </section>
-    </article>
-    <article>
-      <h2><a href="#declare-render">#</a>Declarative Rendering</h2>
-      <p>At the core of Vue.js is a system that enables us to declaratively render data to the DOM using straightforward
-        template syntax:</p>
-      <img src="assets/images/codeblock-3.jpg" alt="code block">
-      <img src="assets/images/codeblock-4.jpg" alt="code block">
-      <p>We have already created our very first Vue app! This looks pretty similar to rendering a string template, but
-        Vue has done a lot of work under the hood. The data and the DOM are now linked, and everything is now reactive.
-        How do we know? Take a look at the example below where counter property increments every second and you will see
-        how rendered DOM changes:</p>
-      <img src="assets/images/codeblock-7.jpg" alt="code block">
-      <img src="assets/images/codeblock-2.jpg" alt="code block">
-      <p>In addition to text interpolation, we can also bind element attributes like this:</p>
-      <img src="assets/images/codeblock-9.jpg" alt="code block">
-      <img src="assets/images/codeblock-8.jpg" alt="code block">
-      <img src="assets/images/codepen.png" alt="codepen">
-      <p>Here we're encountering something new. The v-bind attribute you're seeing is called a directive. Directives are
-        prefixed with v- to indicate that they are special attributes provided by Vue, and as you may have guessed, they
-        apply special reactive behavior to the rendered DOM. Here we are basically saying "keep this element's title
-        attribute up-to-date with the message property on the current active instance."</p>
-    </article>
-  </main>
+      <article>
+        <h2><a href="#getting-started">#</a>Getting Started</h2>
+        <div class="btn">
+          <a href="#">Installation</a>
+        </div>
+        <aside class="tip-box">
+          <h3>TIP</h3>
+          <p>The official guide assumes intermediate level knowledge of HTML, CSS, and JavaScript. If you are totally
+            new
+            to frontend development, it might not be the best idea to jump right into a framework as your first step -
+            grasp the basics then come back! Prior experience with other frameworks helps, but is not required.</p>
+        </aside>
+        <section>
+          <p>The easiest way to try out Vue.js is using the Hello World example (opens new window). Feel free to open it
+            in another tab and follow along as we go through some basic examples.</p>
+          <p>The Installation page provides more options of installing Vue. Note: We do not recommend that beginners
+            start
+            with vue-cli, especially if you are not yet familiar with Node.js-based build tools.
+            #</p>
+        </section>
+      </article>
+      <article>
+        <h2><a href="#declare-render">#</a>Declarative Rendering</h2>
+        <p>At the core of Vue.js is a system that enables us to declaratively render data to the DOM using
+          straightforward
+          template syntax:</p>
+        <img src="assets/images/codeblock-3.jpg" alt="code block">
+        <img src="assets/images/codeblock-4.jpg" alt="code block">
+        <p>We have already created our very first Vue app! This looks pretty similar to rendering a string template, but
+          Vue has done a lot of work under the hood. The data and the DOM are now linked, and everything is now
+          reactive.
+          How do we know? Take a look at the example below where counter property increments every second and you will
+          see
+          how rendered DOM changes:</p>
+        <img src="assets/images/codeblock-7.jpg" alt="code block">
+        <img src="assets/images/codeblock-2.jpg" alt="code block">
+        <p>In addition to text interpolation, we can also bind element attributes like this:</p>
+        <img src="assets/images/codeblock-9.jpg" alt="code block">
+        <img src="assets/images/codeblock-8.jpg" alt="code block">
+        <img src="assets/images/codepen.png" alt="codepen">
+        <p>Here we're encountering something new. The v-bind attribute you're seeing is called a directive. Directives
+          are
+          prefixed with v- to indicate that they are special attributes provided by Vue, and as you may have guessed,
+          they
+          apply special reactive behavior to the rendered DOM. Here we are basically saying "keep this element's title
+          attribute up-to-date with the message property on the current active instance."</p>
+      </article>
+    </main>
+  </div>
   <!--Footer-->
   <footer>
     <p>Deployed on Netlify</p>

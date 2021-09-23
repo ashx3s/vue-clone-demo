@@ -12,3 +12,40 @@ body {
   margin: 0;
   background-color: #ffffff;
 }
+
+/* Navigation */
+header.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaecef;
+}
+nav.site-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+}
+nav.site-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Site Content layout */
+div.container {
+  display: flex;
+}
+
+aside.side-bar {
+  min-width: 20vw;
+  border-right: 4px solid #cecece;
+}
+
+/* Images */
+img {
+  width: 100%;
+}
