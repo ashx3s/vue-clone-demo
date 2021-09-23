@@ -25,6 +25,7 @@
 - Styles debuggin
   - Fesal Bedday
   - Devon Lipsius
-- Site layout planning team:
+- Site layout planning:
   - Locas Cummings
   - Hyeju Hong
+  - Sharon Agronov
