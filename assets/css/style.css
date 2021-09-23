@@ -7,7 +7,9 @@ black: #222222
 grey: #f8f8f8
 aqua: #42b883
 */
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   background-color: #ffffff;

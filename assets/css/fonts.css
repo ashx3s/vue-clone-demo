@@ -7,7 +7,9 @@ li {
   font-family: "Inter", sans-serif;
 }
 
-h1 h2 h3 {
+h1,
+h2,
+h3 {
   font-weight: 500;
   line-height: 1.45;
   color: #2c3e50;
@@ -53,9 +55,12 @@ a {
   text-decoration: none;
   font-weight: 500;
 }
-ul {
-  line-height: 1.5;
+.side-bar a {
+  display: inline-block;
+  font-weight: 400;
+  padding: 0.35rem 1rem 0.35rem 1.25rem;
 }
 ul {
+  line-height: 1.4;
   list-style-type: none;
 }
