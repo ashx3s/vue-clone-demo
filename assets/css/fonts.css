@@ -1,49 +1,52 @@
+h1,
+h2,
+h3,
+p,
+a,
+li {
+  font-family: "Inter", sans-serif;
+}
+
 h1 h2 h3 {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.45;
   color: #2c3e50;
 }
 h1 {
-  font-size: 2.2rem;
+  font-size: clamp(1.9rem, 2.5vw, 2.5rem);
   font-weight: 600;
 }
 h2 {
-  font-size: 1.65rem;
+  font-size: clamp(1.6rem, 2.5vw, 2.3rem);
   padding-bottom: 0.3rem;
   border-bottom: 1px solid #eaecef;
+}
+h3 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
 }
 p,
 a,
 li {
-  font-family: "Source Sans Pro", sans-serif;
   font-size: clamp(1rem, 2.5vw, 1.4rem);
 }
-
-p {
+p,
+nav a {
   color: #2c3e50;
 }
 ol,
 p,
-ul {
-  line-height: 1.7;
-}
-ul {
-  list-style-type: none;
+nav a:hover {
+  text-decoration: underline #42b983 2px;
+  text-underline-offset: 0.25em;
 }
 a {
   color: #42b983;
   text-decoration: none;
+  font-weight: 500;
 }
-
-code {
-  font-family: "Roboto Mono", monospace;
+ul {
+  line-height: 1.5;
 }
-
-.brand-font {
-  font-family: "Dosis", sans-serif;
+ul {
+  list-style-type: none;
 }
-
-/* Use this for the h2 underline style
-border-bottom: 1px solid #eaecef; 
-*/
