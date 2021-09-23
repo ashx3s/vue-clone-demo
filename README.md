@@ -3,11 +3,13 @@
 ## Layout
 - header
   - nav (site)
+    - search bar 
 - aside (side-bar)
   - nav (page)
 - main
   - section
-    - article
-  section
-    - article
+  - article
+    - section
+    - section
 - footer
+
