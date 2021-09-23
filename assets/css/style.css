@@ -43,10 +43,13 @@ div.container {
 aside.side-bar {
   min-width: 20vw;
   border-right: 4px solid #cecece;
-  text-underline-offset: 2em;
 }
 
-/* Images */
+/* Images and Logo */
 img {
   width: 100%;
+}
+
+.vue-logo {
+  display: flex;
 }

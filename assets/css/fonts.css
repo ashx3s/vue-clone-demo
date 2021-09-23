@@ -27,14 +27,23 @@ h3 {
 p,
 a,
 li {
-  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
 }
 p,
-nav a {
+nav a,
+.vue-logo span {
   color: #2c3e50;
 }
-ol,
-p,
+.vue-logo span {
+  font-weight: 500;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+}
+.vue-logo img {
+  min-width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 0.5rem;
+  vertical-align: top;
+}
 nav a:hover {
   text-decoration: underline #42b983 2px;
   text-underline-offset: 0.25em;
