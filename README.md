@@ -17,3 +17,14 @@
     - section
 - footer
 
+## Attributions
+- Images gathered by David Ha
+- Nav links gathered by Jessica Watson
+- Colors gathered by Evan Burton and Raj Hunjan
+- Fonts gathered by Icah Vega
+- Styles debuggin
+  - Fesal Bedday
+  - Devon Lipsius
+- Site layout planning team:
+  - Locas Cummings
+  - Hyeju Hong
