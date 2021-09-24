@@ -18,7 +18,7 @@
 - footer
 
 ## Attributions
-- Images gathered by David Ha
+- Images gathered by [David Ha](https://github.com/boostha)
 - Nav links gathered by Jessica Watson
 - Colors gathered by Evan Burton and Raj Hunjan
 - Fonts gathered by Icah Vega
@@ -29,3 +29,6 @@
   - Locas Cummings
   - Hyeju Hong
   - Sharon Agronov
+
+## Organizational Attributions
+- flock-of-seagulls.jpg from [Pexels](https://pexels.com/flock-of-seagulls) Licensed Under [Pexels License](https://www.pexels.com/license)
